@@ -1,0 +1,11 @@
+<div id="home">
+    <% if (locals.user) {%>
+        <a href="users/destroy-session">Sign-Out</a>
+        <a href="users/update-password">Update Password</a>
+        
+    <%}else {%>
+        <a href="users/sign-in">Sign-In</a>
+        <a href="users/sign-up">Sign-Up</a>
+    <%} %>
+    
+</div>
